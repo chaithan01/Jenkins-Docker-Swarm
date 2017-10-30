@@ -28,5 +28,7 @@ pipeline {
             steps {
                 // Visualize the cluster on port 8081
                 sh visualizer.sh
+            }
+        }
     }
 }
