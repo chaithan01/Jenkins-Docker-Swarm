@@ -1,3 +1,4 @@
+#!/bin/bash 
 docker service create \
 --name=viz \
 --publish=8081:8081/tcp \
