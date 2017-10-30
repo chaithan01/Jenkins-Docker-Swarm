@@ -1,3 +1,4 @@
+#!/bin/bash 
 
 NUMBER_NODES=5
 LEADER_NODE=node_1
