@@ -12,10 +12,16 @@ pipeline {
                 sh init-swarm.sh
             }
         }
+        stage('Workers token') {
+            steps {
+                // Other nodes join as workers
+                sh workers-token.sh
+            }
+        }
         stage('Workers join') {
             steps {
                 // Other nodes join as workers
-                sh join-workers.sh
+                sh workers-join.sh
             }
         }
         stage('Visualizer') {
