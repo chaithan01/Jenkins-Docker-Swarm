@@ -1,6 +1,7 @@
 pipeline {
   agent any
   stages {
+    cleanWs ()
     stage('Create nodes') {
       steps {
         sh 'chmod u+x ./create-nodes.sh'
