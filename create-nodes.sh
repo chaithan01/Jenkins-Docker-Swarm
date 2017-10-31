@@ -5,6 +5,7 @@ LEADER_NODE=node_1
 
 # create nodes
 for NODE in $(seq 1 $NUMBER_NODES); do
+  echo node_$NODE
   docker-machine create --driver virtualbox node_$NODE
 done;
 
