@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-NUMBER_NODES=5
-LEADER_NODE=node1
+NUMBER_NODES=10
+LEADER_NODE=node6
 
 # create nodes
 for NODE in $(seq 1 $NUMBER_NODES)
