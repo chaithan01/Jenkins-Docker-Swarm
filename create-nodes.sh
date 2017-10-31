@@ -7,7 +7,7 @@ LEADER_NODE=node-1
 for NODE in $(seq 1 $NUMBER_NODES)
 do
   echo node_$NODE
-  docker-machine create --driver virtualbox node-$NODE
+  docker-machine create --driver virtualbox node$NODE
 done
 
 LEADER_IP=`docker-machine ip $LEADER_NODE`
